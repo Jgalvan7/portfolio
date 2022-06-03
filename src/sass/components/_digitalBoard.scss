@@ -1,0 +1,23 @@
+.moduloBoard {
+    width: 100%;
+    &__option {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    }
+    &__lienzo {
+        position: relative;
+        width: 100%;
+        border: 1px solid white;
+    }
+    @include media(tablet) {
+        max-width: 700px;
+        max-height: 400px;
+        margin: 10px auto 50px;
+    }
+    @include media(desktop-s) {
+        max-width: 1000px;
+        max-height: 500px;
+    }
+}

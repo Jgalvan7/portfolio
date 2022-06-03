@@ -1,0 +1,61 @@
+.moduloKhronos {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    width: 100%;
+    max-width: 330px;
+    margin: 30px auto;
+    //border: 3px solid $color-oscuro;
+    border-radius: 16px;
+    overflow: hidden;
+    @include shadows($color-secundario, 0.7);
+    .navKhronos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .displayKhronos {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        place-items: center;
+        &__counter {
+            @include font-size(30px)
+        }
+        &__timer {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(2,1fr);
+            width: 100%;
+            padding: 0 5px;
+            .spanSession {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    margin: 0;
+                    padding-right: 5px;
+                }
+                input {
+                    width: 40px;
+                    font-weight: 600;
+                    border: none;
+                    border-radius: 5px;
+                    color: $color-claro;
+                    background-color: $color-secundario;
+                }
+            }
+            .timerCounter {
+                grid-column: 2 / 3;
+                grid-row: 1 / span 2;
+                place-self: center;
+                @include font-size(30px);
+            }
+        }
+        .icon__Alarm {
+            margin: 0 5px;
+        }
+    }
+    .btnKhronos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

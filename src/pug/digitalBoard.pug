@@ -1,0 +1,39 @@
+extend components/templates.pug
+block contenido
+    main
+        section.miniHeroCover
+            .miniHeroCover__imagen
+                img(src="../assets/images/project__digitalBoard.jpg", alt="Imagen de un dibujo en una pizarra digital")
+            .miniHeroCover__contenido
+                h2 Digital Board
+                h4 Pizarra para realizar dibujos o tomar notas
+        section.moduloProject
+            .moduloProject__description
+                p Bienvenido a este proyecto en el cual podemos realizar dibujos en canvas con tan solo unas líneas de HTML5, CSS y Javascript.
+                p El proyecto te permite dibujar en la pantalla con el mouse actualmente, en próximas actualizaciones implementaré algo de diseño a los features de color y grosor de la línea para que resulte más atractivo, también intentaré corregir algunos bug que presenta a la hora de utilizarlo en el movil y optimizar el código para que la captura de la posición sea continua.
+                p Cuando esté mejor optimizado y estilizado, añadiré las funciones de guardado de la imagen y algunos features interesantes mas que se me ocurran.
+                p Puedes probar este proyecto aquí mismo para ver si te gusta o puedes descargar el código desde el repositorio e implementarlo donde desees.
+                p Añadir que actualmente no tengo comentado el código de javascript aún, lo intentaré tener mas adelante para facilitar su lectura.
+            .moduloProject__file
+                h3 Ficha técnica
+                p Versión: 1.0.0
+                p Estado: Pendiente de actualización
+                p Tecnologías:
+                    ul
+                        li HTML5
+                        li CSS
+                        li Javascript
+                p Licencia: MIT
+                p Repositorio: </br>
+                    a(href="index.html") Repositorio Guthub
+        section.moduloBoard#canvasMouse
+            .moduloBoard__option
+                input(type="color", name="selColor")#selColor
+                select(name="grosor")#grosor
+                    option(value="1") 1px
+                    option(value="2") 2px
+                    option(value="3") 3px
+                    option(value="4") 4px
+                    option(value="5") 5px
+            canvas(width="700" height="450").moduloBoard__lienzo#areaDibujo
+    script(src="../js/digitalBoard.js")

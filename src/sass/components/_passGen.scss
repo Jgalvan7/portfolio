@@ -1,0 +1,53 @@
+.moduloPass {
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto;
+    &__gen {
+        margin: 0 auto;
+        padding: 10px 0;
+        max-width: 350px;
+        min-height: 60px;
+        border: 1px solid white;
+        text-align: center;
+        @include font-size(25px);
+    }
+    &__btn {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 2px;
+        max-width: 352px;
+        input {
+            width: 100%;
+            min-height: 25px;
+        }
+    }
+}
+
+.moduloOTP {
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto;
+    &__gen {
+        margin: 0 auto;
+        padding: 10px 0;
+        max-width: 350px;
+        min-height: 60px;
+        border: 1px solid white;
+        text-align: center;
+        @include font-size(25px);
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 2px;
+        max-width: 352px;
+        p {
+            margin: 0;
+            margin-left: 10px;
+        }
+    }
+}

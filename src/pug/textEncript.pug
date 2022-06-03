@@ -1,0 +1,36 @@
+extend components/templates.pug
+block contenido
+    main
+        section.miniHeroCover
+            .miniHeroCover__imagen
+                img(src="../assets/images/project__textEncript.jpg", alt="Imagen de chip con un candado de seguridad cifrado")
+            .miniHeroCover__contenido
+                h2 Text Encript
+                h4 Encriptador de texto
+        section.moduloProject
+            .moduloProject__description
+                p Bienvenidos, este es un proyecto sencillo en el cual encriptamos un texto en función de una clave numérica, si copiamos y pegamos el texto encriptado y facilitamos la clave numérica de encriptación podemos desencriptar el texto y ver el mensaje secreto.
+                p Aunque el proyecto no es gran cosa me pareció divertido realizarlo, su aplicación real no es otra más allá de mandar mensajes secretos que no quedan registrados en ninguna parte y que no pueden ser descifrados por nadie que no tenga la clave, al menos de momento, ya veré si puedo darle algún otro uso más adelante.
+                p Faltan algunas mejoras para que funcione al 100%, ya que si se hace un salto de línea el texto no se desencripta correctamente.
+                p No obstante pueden probar y por supuesto utilizar la aplicación actualmente para los fines que deseen.
+            .moduloProject__file
+                h3 Ficha técnica
+                p Versión: 1.0.0
+                p Estado: Pendiente de actualización
+                p Tecnologías:
+                    ul
+                        li HTML5
+                        li CSS
+                        li Javascript
+                p Licencia: MIT
+                p Repositorio: </br>
+                    a(href="index.html") Repositorio Guthub
+        section.moduloEncript
+                .moduloEncript__container
+                    p.moduloEncript__container--tittle Mensaje TextEncript
+                    textarea(name="mensaje", id="mensaje", cols="30", rows="10").moduloEncript__container--mensaje
+                    .moduloEncript__container--action
+                        input(type="button", value="Encriptar", onclick="encripText()")
+                        input(type="button", value="Desencriptar", onclick="desencripText()")
+                        input(type="button", value="Copiar", onclick="copyToClipBoard()")
+    script(src="../js/textEncript.js")

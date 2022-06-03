@@ -1,0 +1,34 @@
+extend components/templates.pug
+block contenido
+    main#projectFox
+        section.miniHeroCover#projectFox1
+            .miniHeroCover__imagen
+                img(src="../assets/images/project__zorroFeroz.jpg", alt="Imagen de uin zorrito en una granja")
+            .miniHeroCover__contenido
+                h2 Zorro Feroz
+                h4 Juego infantil online
+        section.moduloProject#projectFox2
+            .moduloProject__description
+                p Este proyecto es un pequeño juego online que desarrolle cuando emprece a aprender sobre Javascript, tras varias clases estuve experimentando un poco y se me ocurrio la idea de realizar un juego para mi hijo de 5 años.
+                p Es bastante básico, pero mi hijo quedó impresionado y le encanta jugar, lo que me motivo no solo a seguir aprendiendo sobre programación, ademas me motivó a seguir desarrollándolo poco a poco para mejorarlo e implementarle algunas funciones que lo hagan un poco mas divertido y también se parezca mas a un verdadero juego a nivel de diseño.
+                p Como digo es un juego sencillo, trata de ir moviendo el zorro para cazar al pollo, sin chocar ni con los cerdos ni con las vacas, cada vez que lo aprapas se incrementa el nivel. La posicion y cantidad de animales es aleatoria lo que lo hace un poco mas entretenido al no ser siempre igual.
+                p No está terminado aún, le falta incorporar el menú de pausa y algunas funciones como las vidas que tienen el zorrito y los puntos conseguidos, también tengo que realizar la adaptación a movil o tablet, en las versiones iniciales lo tenia pero al aplicar varias mejoras lo deshabilité ya que no redimensionaba bien.
+                p Te invito o animo a probar y jugar unas partidas, así te distraes unos minutos.
+            .moduloProject__file
+                h3 Ficha técnica
+                p Versión: 1.0.0
+                p Estado: Pendiente de actualización
+                p Tecnologías:
+                    ul
+                        li HTML5
+                        li CSS
+                        li Javascript
+                p Licencia: MIT
+                p Repositorio: </br>
+                    a(href="https://github.com/Jgalvan7/zorroFeroz.git") Repositorio Guthub
+        section.moduloZorro#projectFox3
+            .moduloZorro__imagen#cargarJuego
+                img(src="../assets/images/project__zorroFeroz.jpg", alt="Portada del juego Zorro Feroz")
+                button#loadScreen
+                    img(src="../assets/zorroFeroz/boton__play.png", alt="Botón para jugar")
+    script(src="../js/zorroFeroz.js")

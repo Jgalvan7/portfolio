@@ -1,0 +1,38 @@
+extend components/templates.pug
+block contenido
+    main
+        section.miniHeroCover
+            .miniHeroCover__imagen
+                img(src="../assets/images/project__khronos.png", alt="Imagen de los engranajes de un reloj")
+            .miniHeroCover__contenido
+                h2 Khronos
+                h4 Cronometro y marcador de tiempos.
+        section.moduloProject
+            .moduloProject__description
+                p Bienvenidos, este es un proyecto muy sencillo en el cual emulamos la funcionalidad de un cronometros digital, se le han añadido algunas funcionalidades extras como cuenta regresiva o una alarma temporal.
+                p Este proyecto fue realizado como parte de un reto de aprendizaje para adquirir soltura con el código de programación de javascript.
+                p Faltan algunas mejoras y en futuras actualizaciones me gustaria aplicar algunos features y diseño para darle un mejor efecto visual.
+                p No obstante pueden probar y por supuesto utilizar si lo deseas.
+            .moduloProject__file
+                h3 Ficha técnica
+                p Versión: 1.0.0
+                p Estado: Pendiente de actualización
+                p Tecnologías:
+                    ul
+                        li HTML5
+                        li CSS
+                        li Javascript
+                p Licencia: MIT
+                p Repositorio: </br>
+                    a(href="index.html") Repositorio Guthub
+        section.moduloKhronos
+            .navKhronos
+                button Chronometro
+                button Temporizador
+                button Alarma
+            .displayKhronos
+            .btnKhronos
+                button#btnStart(onclick="startKhronos()") Start
+                button#btnStop(onclick="stopKhronos()") Stop
+                button#btnReset(onclick="resetKhronos()") Reset
+    script(src="../js/appPomodoro.js")

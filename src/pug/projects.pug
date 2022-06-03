@@ -1,0 +1,80 @@
+extend components/templates.pug
+block contenido
+    main
+        section(style={ "box-shadow": 'none'}).miniHeroCover
+            .miniHeroCover__imagen
+                img(src="../assets/images/blogpost__principal.jpg", alt="Imagen de tecnología antigua")
+            .miniHeroCover__contenido
+                h2 Proyectos
+                h4 Bienvenido a la sección de proyectos
+        section.moduloText
+            .moduloText__contenido
+                p En esta sección encontrarás un poco de todo, desde pequeñas aplicaciones que pueden ser implementadas en otros site a networks completamente funcionales, son proyectos en los que trabajo normalmente por afición, ya sea por que me pareció una nueva idea de negocio o por el simple hecho de saber que soy capaz de realizar este tipo de proyectos.
+                p Si quieres ver mas a detalle o saber un poco mas del porque estoy realizando alguno de estos proyecto no dudes en entrar y echarles un vistazo, quizás te guste y puedas aportar código, información o incluso puede ser que te guste la idea y quieras llevarla más lejos.
+                p En cualquier caso espero que puedas formarte una opinión de porqué me apasiona la tecnología, de lo que la programación puede aportar a la sociedad en la que vivimos y de cómo con un poco de imaginación e ilusión se pueden lograr grandes cosas.
+        section.moduloCard
+            .cardBasic
+                .cardBasic__img
+                    a(href="passGen.html")
+                        img(src="../assets/images/project__passGen.jpg", alt="Imagen con números aleatorios")
+                    p Aplicación
+                .cardBasic__contenido
+                    h2 Password Gen
+                    p Es una pequeña aplicación que genera password aleatorias, el proyecto es funcional pero lo realicé como proyecto de prácticas para afianzar conocimientos de Javascript y el código puede ser optimizado.
+                    p Tipo: Proyecto de aprendizaje
+                    p Versión: 1.0.0 ( Estable )
+                    p Tecnologías: HTML5, CSS, Javascript
+                    button
+                        a(href="passGen.html")  Ver proyecto
+            .cardBasic
+                .cardBasic__img
+                    a(href="textEncript.html")
+                        img(src="../assets/images/project__textEncript.jpg", alt="Imagen de chip con un candado de seguridad cifrado")
+                    p Aplicación
+                .cardBasic__contenido
+                    h2 Text Encript
+                    p Es una aplicación la cual permite encriptar texto, su aplicación o integración en la vida real es la de cifrar información a modo de seguridad, es una versión básica, pero se me ocurrió como crearlo y quería probar, no está perfecto pero es funcional.
+                    p Tipo: Proyecto de aprendizaje
+                    p Versión: 1.0.0 ( Pendiente de actualización )
+                    p Tecnologías: HTML5, CSS, Javascript
+                    button
+                        a(href="textEncript.html")  Ver proyecto
+            .cardBasic
+                .cardBasic__img
+                    a(href="digitalBoard.html")
+                        img(src="../assets/images/project__digitalBoard.jpg", alt="Imagen de un dibujo en una pizarra digital")
+                    p Aplicación
+                .cardBasic__contenido
+                    h2 Digital Board
+                    p Es una aplicación simple que trata de una pizarra digital en la que puedes dibujar o tomar notas, se puede integrar en cualquier otro proyecto infantil, está pendiente la parte de algunos features para darle un poco más de interactividad.
+                    p Tipo: Proyecto de aprendizaje
+                    p Versión: 1.0.0 ( Pendiente de actualización )
+                    p Tecnologías: HTML5, CSS, Javascript
+                    button
+                        a(href="digitalBoard.html")  Ver proyecto
+            .cardBasic
+                .cardBasic__img
+                    a(href="zorroFeroz.html")
+                        img(src="../assets/images/project__zorroFeroz.jpg", alt="Imagen de un zorrito en una granja")
+                    p Juego Online
+                .cardBasic__contenido
+                    h2 Zorro Feroz
+                    p Este proyecto es un pequeño juego online que desarrollé cuando empecé a aprender sobre Javascript, tras varias clases estuve experimentando un poco y se me ocurrió la idea de realizar un juego para mi hijo de 5 años.
+                    p Tipo: Proyecto de aprendizaje
+                    p Versión: 1.0.0 ( Pendiente de actualización )
+                    p Tecnologías: HTML5, CSS, Javascript
+                    button
+                        a(href="zorroFeroz.html")  Ver proyecto
+            .cardBasic
+                .cardBasic__img
+                    a(href="khronos.html")
+                        img(src="../assets/images/project__khronos.png", alt="Imagen de los engranajes de un reloj")
+                    p Juego Online
+                .cardBasic__contenido
+                    h2 Khronos
+                    p Este proyecto trata de emular un pequeño crono digital con algunas funcionalidades extras, como cuenta regresiva o alarmas, en futuras actualizaciones le incorporare algunos features de diseño.
+                    p Tipo: Proyecto de aprendizaje
+                    p Versión: 1.0.0 ( Pendiente de actualización )
+                    p Tecnologías: HTML5, CSS, Javascript
+                    button
+                        a(href="khronos.html")  Ver proyecto
