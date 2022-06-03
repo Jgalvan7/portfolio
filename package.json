@@ -1,0 +1,22 @@
+{
+  "name": "jgalvandesign",
+  "version": "1.0.0",
+  "description": "Personal portfolio Jgalvan Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "jgalvandesign",
+    "web",
+    "desing",
+    "javascript",
+    "css",
+    "sass",
+    "pug",
+    "html"
+  ],
+  "author": "Jesús Galván <galvan.jgg@gmail.com>",
+  "license": "MIT"
+}
